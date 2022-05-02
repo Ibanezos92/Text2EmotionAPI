@@ -4,6 +4,7 @@ import time
 import logging
 
 app= Flask(__name__)
+logging.basicConfig(filename='/var/log/emotionsapi.out.log', level=logging.INFO)
 
 @app.post('/emotion')
 def get_emotion():
