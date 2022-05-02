@@ -15,5 +15,5 @@ def get_emotion():
 
 if __name__ == "__main__":
     from waitress import serve
-    print('Serving on http://localhost:5000')
+    logging.info('Serving on http://localhost:5000')
     serve(app, host="localhost", port=5000)
